@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "03785060-3640-42cc-96e9-ef79f2227662": {
+      "ProjectGuid": "03785060-3640-42cc-96e9-ef79f2227662",
+      "DisplayName": "FizzBuzzWeb",
+      "ColorIndex": 0
+    }
+  },
+  "NextColorIndex": 1
+}

@@ -1,0 +1,26 @@
+﻿@page
+@model IndexModel
+@{ ViewData["Title"] = "Fizz Buzz"; }
+
+<div class="text-left">
+    <form method="post">
+        <label>Birthday: </label>
+        <input asp-for="data.Year" /> <br />
+        <span asp-validation-for="data.Year" class="text-danger"></span>
+        <label>Name: </label>
+        <input asp-for="data.Name" /> <br />
+        <span asp-validation-for="data.Name" class="text-danger"></span>
+        <label>Surname: </label>
+        <input asp-for="data.Surname" /> <br />
+        <span asp-validation-for="data.Surname" class="text-danger"></span>
+        <button class="btn btn-primary" type="submit">SUBMIT</button>
+        @if (ViewData.ModelState.IsValid)
+        {
+            @if (Model.data != null)
+            {
+                <p>@Model.data.Name @Model.data.Surname was born in the year @Model.data.Year. It was @Model.data.isleapyer() year.</p>
+            }
+        }
+
+    </form>
+</div>

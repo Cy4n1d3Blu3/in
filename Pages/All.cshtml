@@ -1,0 +1,32 @@
+﻿@page
+@model FizzBuzzWeb.Pages.WszystkieModel
+
+@{ ViewData["Title"] = "Wszystkie"; }
+
+<h1>Alldata</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th> Birthday: </th>
+            <th> Name: </th>
+            <th> Surname: </th>
+            <th> Database input time: </th>
+            <th> Leap: </th>
+        </tr>
+    </thead>
+
+    <tbody>
+        @foreach (var i in Model.data)
+        {
+        <tr>
+            <td> @i.Year </td>
+            <td> @i.Name </td>
+            <td> @i.Surname </td>
+            <td> @i.Date </td>
+            <td> @i.Leap </td>
+        </tr>
+        }
+    </tbody>
+
+</table>
